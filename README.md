@@ -20,8 +20,8 @@ This project demonstrates the following:
 
 - **Java**
 - **Selenium WebDriver**
-- **JUnit/TestNG** *(depending on what was used in the course)*
-- **Maven** *(if used)*
+- **JUnit/TestNG** 
+- **Maven**  
 - **Eclipse IDE**
 
 ---
