@@ -11,15 +11,16 @@ public class Logged {
 
 		//invoke the .exe of the browser driver manually or by using SeleniumManager
 				
-	        System.setProperty("webdriver.chrome.driver","C:\\Drivers\\chromedriver-win64\\chromedriver.exe");
-			
+	    System.setProperty("webdriver.chrome.driver","C:\\Drivers\\chromedriver-win64\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 		//add browser driver 	 
-			WebDriver driver=new ChromeDriver();	
+		//	WebDriver driver=new ChromeDriver();	
 			
 	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 			String username="eman";
 			
 			driver.get("https://rahulshettyacademy.com/locatorspractice/");
+
 			driver.findElement(By.id("inputUsername")).sendKeys(username);
 
 			driver.findElement(By.cssSelector("input[placeholder='Password']")).sendKeys("rahulshettyacademy");
